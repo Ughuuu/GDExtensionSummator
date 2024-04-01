@@ -1,9 +1,9 @@
 #include "register_types.h"
 #include "summator.h"
 #include <gdextension_interface.h>
-#include <godot_cpp/core/class_db.hpp>
-#include <godot_cpp/core/defs.hpp>
-#include <godot_cpp/godot.hpp>
+#include <godot_compat/core/class_db.hpp>
+#include <godot_compat/core/defs.hpp>
+#include <godot_compat/godot.hpp>
 
 using namespace godot;
 

@@ -8,7 +8,7 @@
 #include <windows.h>
 #endif
 
-#include <godot_cpp/classes/ref.hpp>
+#include <godot_compat/classes/ref.hpp>
 
 using namespace godot;
 
