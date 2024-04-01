@@ -87,6 +87,18 @@ jobs:
         with:
           version: 12.2.0
 
+      - name: Clone Godot
+        uses: actions/checkout@v3
+        with:
+          repository: 'godotengine/godot'
+          path: godot
+
+      - name: Create Compat layer in godot-cpp
+        run: |
+          python ../godot-cpp/compat_generator.py
+          cp output_header_mapping.json ../godot-cpp/output_header_mapping.json
+        working-directory: godot
+
       - name: Compile godot-cpp
         shell: sh
         run: |
